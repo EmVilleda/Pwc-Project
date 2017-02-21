@@ -12,7 +12,6 @@ public class ocIcon {
 	public PApplet p;
 	public PVector pos, initPos;
 	public float radius, initRadius;
-	public float growthFactor = 0.0f;
 	public ocIconDetail shape;
 	public ArrayList<PVector> vecs;
 	public int detail = 36;
