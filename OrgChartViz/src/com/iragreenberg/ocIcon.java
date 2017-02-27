@@ -89,21 +89,21 @@ public class ocIcon {
 		p.endShape(PApplet.CLOSE);
 		p.popMatrix();
 
-//		if (p.mousePressed && isHit()) {
-//			isDraggable = true; // set state NOT actual position of sprite
-//		} else {
-//				pos.x = initPos.x + offset.x;
-//				pos.y = initPos.y + offset.y;
-//				offset.mult(offsetDamping);
-//				//ocCollection.isSystemHitSafe = true;
-//		}
-//		
-//		if (isDraggable){
-//			pos.x = p.mouseX;
-//			pos.y = p.mouseY;
-//			offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
-//			//ocCollection.isSystemHitSafe = false;
-//		}
+		if (p.mousePressed && isHit()) {
+			isDraggable = true; // set state NOT actual position of sprite
+		} else {
+				pos.x = initPos.x + offset.x;
+				pos.y = initPos.y + offset.y;
+				offset.mult(offsetDamping);
+				//ocCollection.isSystemHitSafe = true;
+		}
+
+		if (isDraggable){
+			pos.x = p.mouseX;
+			pos.y = p.mouseY;
+			offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
+			//ocCollection.isSystemHitSafe = false;
+		}
 
 	}
 

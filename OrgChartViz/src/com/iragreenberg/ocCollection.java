@@ -14,8 +14,8 @@ public class ocCollection {
 	public float margin = 100.0f;
 	public boolean isSystemHitSafe = true;
 	public boolean isSystemExpandableSafe = true;
-	public float expandSpeed = 6.5f;
-	// public float initScaleFactor; // initially scales nodes per node count
+	public float expandSpeed = 30.5f;
+	public float initScaleFactor; // initially scales nodes per node count
 
 	public ocCollection() {
 	}
@@ -69,23 +69,36 @@ public class ocCollection {
 				icon.offset = new PVector(p.mouseX - icon.initPos.x, p.mouseY - icon.initPos.y);
 			}
 
+
 			if (icon.isHit() && isSystemExpandableSafe) {
 				icon.isExpandable = true;
 				isSystemExpandableSafe = false;
 			} else {
-				// icon.radius = icon.initRadius;
-				// icon.offset.mult(icon.offsetDamping);
+				 icon.radius = icon.initRadius;
+				 icon.offset.mult(icon.offsetDamping);
 			}
 
 			p.pushMatrix();
-			if (icon.isExpandable && icon.radius < 100) {
+            icons.get(i).setIsExpandable(true);
+			if (icon.isExpandable && icon.radius < 100 && icon.isHit()) {
 				icon.radius += expandSpeed;
 			}
 
 			icons.get(i).display();
-			p.popMatrix();
+
+            p.popMatrix();
+
+            //connect icons
+//            p.stroke(0);
+//            p.strokeWeight(1);
+//            p.line(icon.pos.x + icon.radius, icon.pos.y, icons.get(i+1).pos.x - icon.radius, icons.get(i+1).pos.y);
+            //TO DO: make it so that icons are still draggable and expandable when connected
+
+
+
 		}
 	}
+
 
 	public void setAreIconsDraggable(int id) {
 

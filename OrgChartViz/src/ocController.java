@@ -20,7 +20,7 @@ public class ocController extends PApplet {
 	 *
 	 * 
 	 */
-	//public ocIcon icon;
+	public ocIcon icon;
 	public ocCollection collection;
 
 	public void setup() {
