@@ -10,7 +10,7 @@ public class ocIcon {
 	 *
 	 */
 	public PApplet p;
-	public PVector pos, initPos;
+	public PVector pos, initPos, currPos;
 	public float radius, initRadius;
 	public ocIconDetail shape;
 	public ArrayList<PVector> vecs;
@@ -37,6 +37,7 @@ public class ocIcon {
 		this.p = p;
 		this.pos = pos;
 		initPos = new PVector(pos.x, pos.y);
+		currPos = initPos;
 		// spd = new PVector
 		this.radius = initRadius = radius;
 		this.shape = shape;
@@ -91,9 +92,11 @@ public class ocIcon {
 
 		if (p.mousePressed && isHit()) {
 			isDraggable = true; // set state NOT actual position of sprite
+			currPos.x = pos.x;
+			currPos.y = pos.y;
 		} else {
-				pos.x = initPos.x + offset.x;
-				pos.y = initPos.y + offset.y;
+				pos.x = currPos.x;
+				pos.y = currPos.y;
 				offset.mult(offsetDamping);
 				//ocCollection.isSystemHitSafe = true;
 		}
