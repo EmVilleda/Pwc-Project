@@ -104,7 +104,7 @@ public class ocIcon {
 		if (isDraggable){
 			pos.x = p.mouseX;
 			pos.y = p.mouseY;
-			offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
+			//offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
 			//ocCollection.isSystemHitSafe = false;
 		}
 
