@@ -10,7 +10,7 @@ public class ocIcon {
 	 *
 	 */
 	public PApplet p;
-	public PVector pos, initPos, currPos;
+	public PVector pos, initPos, startPos, currPos;
 	public float radius, initRadius;
 	public ocIconDetail shape;
 	public ArrayList<PVector> vecs;
@@ -37,6 +37,7 @@ public class ocIcon {
 		this.p = p;
 		this.pos = pos;
 		initPos = new PVector(pos.x, pos.y);
+		startPos = new PVector(initPos.x, initPos.y);
 		currPos = initPos;
 		// spd = new PVector
 		this.radius = initRadius = radius;
@@ -104,8 +105,21 @@ public class ocIcon {
 		if (isDraggable){
 			pos.x = p.mouseX;
 			pos.y = p.mouseY;
-			offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
+			//offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
 			//ocCollection.isSystemHitSafe = false;
+		}
+
+		if (p.keyPressed)
+		{
+			isResettable = true;
+
+//			System.out.println(pos.x);
+//			System.out.println(initPos.x);
+//			System.out.println(startPos.x);
+
+			//Return to current position
+			currPos.x = startPos.x;
+			currPos.y = startPos.y;
 		}
 
 	}
