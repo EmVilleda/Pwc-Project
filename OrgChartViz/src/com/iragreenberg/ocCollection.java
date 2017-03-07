@@ -92,8 +92,7 @@ public class ocCollection {
 			if (i + 1 < icons.size()) {
 				p.stroke(0);
 				p.strokeWeight(1);
-				p.line(icon.pos.x + icon.radius, icon.pos.y, icons.get(i+1).pos.x - icon.radius, icons.get(i+1).pos.y);
-				//TO DO: make it so that icons are still draggable and expandable when connected
+				p.line(icon.pos.x + icon.radius - expandSpeed, icon.pos.y, icons.get(i+1).pos.x - icon.radius + expandSpeed, icons.get(i+1).pos.y);
 			}
 
 
