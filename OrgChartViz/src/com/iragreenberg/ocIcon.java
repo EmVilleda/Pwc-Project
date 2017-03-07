@@ -25,7 +25,7 @@ public class ocIcon {
 
 	public PVector offset = new PVector();
 	public float offsetDamping = .9125f;
-	
+
 	public boolean isReleased = false;
 	public boolean isDraggable;
 	public boolean isExpandable;
@@ -43,36 +43,36 @@ public class ocIcon {
 		vecs = new ArrayList<PVector>();
 		float theta = 0.0f;
 		switch (shape) {
-		case CIRCLE:
-			theta = 0;
-			for (int i = 0; i < detail; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / detail;
-			}
-			break;
-		case TRIANGLE:
-			theta = -p.PI / 2.0f;
-			for (int i = 0; i < 3; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / 3;
-			}
-			break;
-		case SQUARE:
-			theta = -p.PI / 4.0f;
-			for (int i = 0; i < 4; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / 4;
-			}
-			break;
-		case RECTANGLE:
-			theta = -p.PI / 4.0f;
-			for (int i = 0; i < 4; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f * 1.5f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / 4;
-			}
-			break;
-		default:
-			break;
+			case CIRCLE:
+				theta = 0;
+				for (int i = 0; i < detail; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / detail;
+				}
+				break;
+			case TRIANGLE:
+				theta = -p.PI / 2.0f;
+				for (int i = 0; i < 3; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / 3;
+				}
+				break;
+			case SQUARE:
+				theta = -p.PI / 4.0f;
+				for (int i = 0; i < 4; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / 4;
+				}
+				break;
+			case RECTANGLE:
+				theta = -p.PI / 4.0f;
+				for (int i = 0; i < 4; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f * 1.5f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / 4;
+				}
+				break;
+			default:
+				break;
 		}
 	}
 
@@ -89,21 +89,21 @@ public class ocIcon {
 		p.endShape(PApplet.CLOSE);
 		p.popMatrix();
 
-//		if (p.mousePressed && isHit()) {
-//			isDraggable = true; // set state NOT actual position of sprite
-//		} else {
-//				pos.x = initPos.x + offset.x;
-//				pos.y = initPos.y + offset.y;
-//				offset.mult(offsetDamping);
-//				//ocCollection.isSystemHitSafe = true;
-//		}
-//		
-//		if (isDraggable){
-//			pos.x = p.mouseX;
-//			pos.y = p.mouseY;
-//			offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
-//			//ocCollection.isSystemHitSafe = false;
-//		}
+		if (p.mousePressed && isHit()) {
+			isDraggable = true; // set state NOT actual position of sprite
+		} else {
+			pos.x = initPos.x + offset.x;
+			pos.y = initPos.y + offset.y;
+			offset.mult(offsetDamping);
+			//ocCollection.isSystemHitSafe = true;
+		}
+
+		if (isDraggable){
+			pos.x = p.mouseX;
+			pos.y = p.mouseY;
+			offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
+			//ocCollection.isSystemHitSafe = false;
+		}
 
 	}
 
@@ -119,7 +119,7 @@ public class ocIcon {
 	public void setIsDraggable(boolean isDraggable) {
 		this.isDraggable = isDraggable;
 	}
-	
+
 	public void setIsExpandable(boolean isExpandable) {
 		this.isExpandable = isExpandable;
 	}

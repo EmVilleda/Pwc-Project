@@ -14,8 +14,8 @@ public class ocCollection {
 	public float margin = 100.0f;
 	public boolean isSystemHitSafe = true;
 	public boolean isSystemExpandableSafe = true;
-	public float expandSpeed = 6.5f;
-	// public float initScaleFactor; // initially scales nodes per node count
+	public float expandSpeed = 30.5f;
+	public float initScaleFactor; // initially scales nodes per node count
 
 	public ocCollection() {
 	}
@@ -55,7 +55,7 @@ public class ocCollection {
 
 			if (p.mousePressed && icon.isHit() && isSystemHitSafe) {
 				icon.isDraggable = true; // set state NOT actual position of
-											// sprite
+				// sprite
 				isSystemHitSafe = false;
 			} else {
 				icon.pos.x = icon.initPos.x + icon.offset.x;
@@ -69,23 +69,42 @@ public class ocCollection {
 				icon.offset = new PVector(p.mouseX - icon.initPos.x, p.mouseY - icon.initPos.y);
 			}
 
+
 			if (icon.isHit() && isSystemExpandableSafe) {
 				icon.isExpandable = true;
 				isSystemExpandableSafe = false;
 			} else {
-				// icon.radius = icon.initRadius;
-				// icon.offset.mult(icon.offsetDamping);
+				icon.radius = icon.initRadius;
+				icon.offset.mult(icon.offsetDamping);
 			}
 
 			p.pushMatrix();
-			if (icon.isExpandable && icon.radius < 100) {
+			icons.get(i).setIsExpandable(true);
+			if (icon.isExpandable && icon.radius < 100 && icon.isHit()) {
 				icon.radius += expandSpeed;
 			}
 
 			icons.get(i).display();
+
 			p.popMatrix();
+
+			/*
+
+			System.out.println(icon.pos.x + icon.radius);
+			System.out.println(icon.pos.y);
+			System.out.println(icons.get(i + 1).pos.x - icon.radius);
+			System.out.println(icons.get(i + 1).pos.y);
+*/
+			//drawLines();
+
+			//connect icons
+			//TO DO: make it so that icons are still draggable and expandable when connected
+
+
+
 		}
 	}
+
 
 	public void setAreIconsDraggable(int id) {
 
@@ -106,6 +125,15 @@ public class ocCollection {
 		}
 		for (int i = 0; i < icons.size(); i++) {
 			icons.get(i).setIsExpandable(isExpandable);
+		}
+	}
+
+	public void drawLines(){
+		for (int i = 0; i < icons.size(); i++) {
+			ocIcon icon = icons.get(i);
+			p.stroke(0);
+			p.strokeWeight(1);
+			p.line(icon.pos.x + icon.radius, icon.pos.y, icons.get(i + 1).pos.x - icon.radius, icons.get(i + 1).pos.y);
 		}
 	}
 
