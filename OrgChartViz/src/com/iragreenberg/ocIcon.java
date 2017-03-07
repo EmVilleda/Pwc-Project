@@ -137,19 +137,18 @@ public class ocIcon {
 	}
 
 	public void setParent(ocIcon parent) {
-		parent.addChild(this);
 		this.parent = parent;
-	}
-
-	public void addChild(PApplet p, PVector pos, float radius, ocIconDetail shape) {
-		ocIcon child = new ocIcon(p, pos, radius, shape);
-		child.setParent(this);
-		this.children.add(child);
 	}
 
 	public void addChild(ocIcon child) {
 		child.setParent(this);
 		this.children.add(child);
+	}
+
+	public void addChild(PApplet p, PVector pos, float radius, ocIconDetail shape) {
+		ocIcon child = new ocIcon(p, pos, radius, shape);
+		child.setParent(this);
+		children.add(child);
 	}
 
 	public PVector getVector() {
@@ -161,7 +160,11 @@ public class ocIcon {
 	}
 
 	public void display() {
-		p.fill(255, 200, 45);
+		if(parent == null)
+			p.fill(200, 200, 200);
+		else
+			p.fill(255, 200, 45);
+
 		p.strokeWeight(1.0f/radius);
 		p.pushMatrix();
 		p.translate(pos.x, pos.y);
