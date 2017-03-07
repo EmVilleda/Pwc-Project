@@ -59,3 +59,8 @@ void mouseDragged(){
   xo= xo + (mouseX - pmouseX);
   yo = yo + (mouseY - pmouseY);
 }
+
+void mouseWheel(MouseEvent event) {
+  float e = event.getCount();
+  zoom -= (.08 * e);
+}
