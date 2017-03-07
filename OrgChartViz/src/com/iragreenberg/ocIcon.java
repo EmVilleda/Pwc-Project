@@ -10,7 +10,7 @@ public class ocIcon {
 	 *
 	 */
 	public PApplet p;
-	public PVector pos, initPos;
+	public PVector pos, initPos, startPos, currPos;
 	public float radius, initRadius;
 	public ocIconDetail shape;
 	public ArrayList<PVector> vecs;
@@ -37,6 +37,8 @@ public class ocIcon {
 		this.p = p;
 		this.pos = pos;
 		initPos = new PVector(pos.x, pos.y);
+		startPos = new PVector(initPos.x, initPos.y);
+		currPos = initPos;
 		// spd = new PVector
 		this.radius = initRadius = radius;
 		this.shape = shape;
@@ -91,19 +93,48 @@ public class ocIcon {
 
 		if (p.mousePressed && isHit()) {
 			isDraggable = true; // set state NOT actual position of sprite
+<<<<<<< HEAD
 		} else {
 			pos.x = initPos.x + offset.x;
 			pos.y = initPos.y + offset.y;
 			offset.mult(offsetDamping);
 			//ocCollection.isSystemHitSafe = true;
+=======
+			currPos.x = pos.x;
+			currPos.y = pos.y;
+		} else {
+				pos.x = currPos.x;
+				pos.y = currPos.y;
+				offset.mult(offsetDamping);
+				//ocCollection.isSystemHitSafe = true;
+>>>>>>> 0e7e9c8aea1d59f08eb626f91342ea0cf0b758ea
 		}
 
 		if (isDraggable){
 			pos.x = p.mouseX;
 			pos.y = p.mouseY;
+<<<<<<< HEAD
 			offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
 			//ocCollection.isSystemHitSafe = false;
 		}
+=======
+			//offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
+			//ocCollection.isSystemHitSafe = false;
+		}
+
+		if (p.keyPressed)
+		{
+			isResettable = true;
+
+//			System.out.println(pos.x);
+//			System.out.println(initPos.x);
+//			System.out.println(startPos.x);
+
+			//Return to current position
+			currPos.x = startPos.x;
+			currPos.y = startPos.y;
+		}
+>>>>>>> 0e7e9c8aea1d59f08eb626f91342ea0cf0b758ea
 
 	}
 

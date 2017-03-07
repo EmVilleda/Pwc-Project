@@ -74,18 +74,28 @@ public class ocCollection {
 				icon.isExpandable = true;
 				isSystemExpandableSafe = false;
 			} else {
+<<<<<<< HEAD
 				icon.radius = icon.initRadius;
 				icon.offset.mult(icon.offsetDamping);
 			}
 
 			p.pushMatrix();
 			icons.get(i).setIsExpandable(true);
+=======
+				 icon.radius = icon.initRadius;
+				 icon.offset.mult(icon.offsetDamping);
+			}
+
+			p.pushMatrix();
+            icons.get(i).setIsExpandable(true);
+>>>>>>> 0e7e9c8aea1d59f08eb626f91342ea0cf0b758ea
 			if (icon.isExpandable && icon.radius < 100 && icon.isHit()) {
 				icon.radius += expandSpeed;
 			}
 
 			icons.get(i).display();
 
+<<<<<<< HEAD
 			p.popMatrix();
 
 			/*
@@ -100,6 +110,16 @@ public class ocCollection {
 			//connect icons
 			//TO DO: make it so that icons are still draggable and expandable when connected
 
+=======
+            p.popMatrix();
+
+            //connect icons
+			if (i + 1 < icons.size()) {
+				p.stroke(0);
+				p.strokeWeight(1);
+				p.line(icon.pos.x + icon.radius - expandSpeed, icon.pos.y, icons.get(i+1).pos.x - icon.radius + expandSpeed, icons.get(i+1).pos.y);
+			}
+>>>>>>> 0e7e9c8aea1d59f08eb626f91342ea0cf0b758ea
 
 
 		}
@@ -128,6 +148,7 @@ public class ocCollection {
 		}
 	}
 
+<<<<<<< HEAD
 	public void drawLines(){
 		for (int i = 0; i < icons.size(); i++) {
 			ocIcon icon = icons.get(i);
@@ -137,4 +158,6 @@ public class ocCollection {
 		}
 	}
 
+=======
+>>>>>>> 0e7e9c8aea1d59f08eb626f91342ea0cf0b758ea
 }
