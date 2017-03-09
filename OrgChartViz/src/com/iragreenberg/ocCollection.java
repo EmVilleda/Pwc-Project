@@ -76,33 +76,15 @@ public class ocCollection {
 			}
 
 			p.pushMatrix();
-			icons.get(i).setIsExpandable(true);
-				 icon.radius = icon.initRadius;
-				 icon.offset.mult(icon.offsetDamping);
-			}
 
-			p.pushMatrix();
-            icons.get(i).setIsExpandable(true);
+			icons.get(i).setIsExpandable(true);
 			if (icon.isExpandable && icon.radius < 100 && icon.isHit()) {
 				icon.radius = icon.initRadius + expandSpeed;
 			}
+
 			icons.get(i).display();
+
 			p.popMatrix();
-			p.popMatrix();
-
-			/*
-
-			System.out.println(icon.pos.x + icon.radius);
-			System.out.println(icon.pos.y);
-			System.out.println(icons.get(i + 1).pos.x - icon.radius);
-			System.out.println(icons.get(i + 1).pos.y);
-*/
-			//drawLines();
-
-			//connect icons
-			//TO DO: make it so that icons are still draggable and expandable when connected
-
-            p.popMatrix();
 
             //connect icons
 			if (i + 1 < icons.size()) {

@@ -128,14 +128,16 @@ public class ocIcon {
 			pos.y = initPos.y + offset.y;
 			offset.mult(offsetDamping);
 			//ocCollection.isSystemHitSafe = true;
+		}
+
+		if (p.mousePressed && isHit()){
 			currPos.x = pos.x;
 			currPos.y = pos.y;
-		}else{
+		} else  {
 			pos.x = currPos.x;
 			pos.y = currPos.y;
 			offset.mult(offsetDamping);
 			//ocCollection.isSystemHitSafe = true;
-
 		}
 
 		if (isDraggable) {
@@ -146,46 +148,44 @@ public class ocIcon {
 		}
 		//offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
 		//ocCollection.isSystemHitSafe = false;
-	}
-
-
-	if (p.keyPressed){
-		if (p.key == ' ') { //reset to x and y positions
-			isResettable = true;
-			currPos.x = startPos.x;
-			currPos.y = startPos.y;
-		} else if (p.key == 'r') { //reset radius
-			zoomRadius = radius;
-		}
-
-		if (p.key == p.CODED) {
-			setCanZoom(true);
-
-			if (p.keyCode == p.RIGHT) {
-				p.scale(currPos.x += 20);
-				//p.scale(currPos.y += 20);
-			} else if (p.keyCode == p.LEFT) {
-				p.scale(currPos.x -= 20);
-				//p.scale(currPos.y += 20);
-			} else if (p.keyCode == p.UP) {
-				p.scale(currPos.y -= 20);
-
-				//p.scale(currPos.y += 20);
-			} else if (p.keyCode == p.DOWN) {
-				p.scale(currPos.y += 20);
+		if (p.keyPressed) {
+			if (p.key == ' ') { //reset to x and y positions
+				isResettable = true;
+				currPos.x = startPos.x;
+				currPos.y = startPos.y;
+			} else if (p.key == 'r') { //reset radius
+				zoomRadius = radius;
 			}
-		}
-		if (p.key == 'x') {
-			if (zoomRadius < 100) {
-				p.scale(zoomRadius += 0.5);
-			} else if (zoomRadius >= 100) {
-				p.scale(zoomRadius);
+
+			if (p.key == p.CODED) {
+				setCanZoom(true);
+
+				if (p.keyCode == p.RIGHT) {
+					p.scale(currPos.x += 20);
+					//p.scale(currPos.y += 20);
+				} else if (p.keyCode == p.LEFT) {
+					p.scale(currPos.x -= 20);
+					//p.scale(currPos.y += 20);
+				} else if (p.keyCode == p.UP) {
+					p.scale(currPos.y -= 20);
+
+					//p.scale(currPos.y += 20);
+				} else if (p.keyCode == p.DOWN) {
+					p.scale(currPos.y += 20);
+				}
 			}
-		} else if (p.key == 'z') {
-			if (zoomRadius <= 20) {
-				p.scale(zoomRadius);
-			} else if (zoomRadius > 20) {
-				p.scale(zoomRadius -= 0.5);
+			if (p.key == 'x') {
+				if (zoomRadius < 100) {
+					p.scale(zoomRadius += 0.5);
+				} else if (zoomRadius >= 100) {
+					p.scale(zoomRadius);
+				}
+			} else if (p.key == 'z') {
+				if (zoomRadius <= 20) {
+					p.scale(zoomRadius);
+				} else if (zoomRadius > 20) {
+					p.scale(zoomRadius -= 0.5);
+				}
 			}
 		}
 	}
