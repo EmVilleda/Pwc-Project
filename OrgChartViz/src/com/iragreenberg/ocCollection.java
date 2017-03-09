@@ -82,9 +82,7 @@ public class ocCollection {
 				icon.radius = icon.initRadius + expandSpeed;
 			}
 
-			icons.get(i).display();
 
-			p.popMatrix();
 
             //connect icons
 			if (i + 1 < icons.size()) {
@@ -92,6 +90,9 @@ public class ocCollection {
 				p.strokeWeight(1);
 				p.line(icon.pos.x + icon.radius - expandSpeed, icon.pos.y, icons.get(i + 1).pos.x - icon.radius + expandSpeed, icons.get(i + 1).pos.y);
 			}
+
+			icons.get(i).display();
+			p.popMatrix();
 		}
 	}
 
@@ -125,7 +126,7 @@ public class ocCollection {
 			ocIcon icon = icons.get(i);
 			p.stroke(0);
 			p.strokeWeight(1);
-			p.line(icon.pos.x + icon.radius, icon.pos.y, icons.get(i + 1).pos.x - icon.radius, icons.get(i + 1).pos.y);
+			p.line(icon.pos.x, icon.pos.y, icons.get(i + 1).pos.x, icons.get(i + 1).pos.y);
 		}
 	}
 }
