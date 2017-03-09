@@ -1,7 +1,9 @@
 package com.iragreenberg;
 
+import java.awt.*;
 import java.util.ArrayList;
 import processing.core.PApplet;
+import processing.core.PFont;
 import processing.core.PVector;
 
 public class ocIcon {
@@ -11,7 +13,7 @@ public class ocIcon {
 	 */
 	public PApplet p;
 	public PVector pos, initPos, startPos, currPos;
-	public float radius, initRadius;
+	public float radius, initRadius, zoomRadius;
 	public ocIconDetail shape;
 	public ArrayList<PVector> vecs;
 	public int detail = 36;
@@ -29,11 +31,15 @@ public class ocIcon {
 	public boolean isReleased = false;
 	public boolean isDraggable;
 	public boolean isExpandable;
+	public boolean canZoom = false;
+
+	PFont font;
 
 	public ocIcon() {
 	}
 
 	public ocIcon(PApplet p, PVector pos, float radius, ocIconDetail shape) {
+		//Setup
 		this.p = p;
 		this.pos = pos;
 		initPos = new PVector(pos.x, pos.y);
@@ -41,9 +47,12 @@ public class ocIcon {
 		currPos = initPos;
 		// spd = new PVector
 		this.radius = initRadius = radius;
+		zoomRadius = radius;
 		this.shape = shape;
 		vecs = new ArrayList<PVector>();
 		float theta = 0.0f;
+
+		//Nodes
 		switch (shape) {
 		case CIRCLE:
 			theta = 0;
@@ -79,11 +88,31 @@ public class ocIcon {
 	}
 
 	public void display() {
-		p.fill(255, 200, 45);
+		//Menu
+		p.pushMatrix();
+		p.fill(251, 231, 240);
+		p.stroke(0);
+		p.rect(90, p.height - 220, 300, 170);
+
+		font = p.createFont("American Typewriter",30,true);
+		p.textFont(font, 16);
+		p.fill(94, 35, 35);
+		p.text("User controls:", 100, p.height - 200);
+		p.text("Press and click on node to drag", 100, p.height - 180);
+		p.text("r with mouse over: expand node", 100, p.height - 160);
+		p.text("x: increase node radius", 100, p.height - 140);
+		p.text("z: decrease node radius", 100, p.height - 120);
+		p.text("r: reset size", 100, p.height - 100);
+		p.text("Move image wth arrow keys", 100, p.height - 80);
+		p.text("Press spacebar to reset position", 100, p.height - 60);
+		p.popMatrix();
+
+		//Draw icons
+		p.fill(253, 181, 43);
 		p.strokeWeight(1.0f/radius);
 		p.pushMatrix();
 		p.translate(pos.x, pos.y);
-		p.scale(radius);
+		p.scale(zoomRadius);
 		p.beginShape();
 		for (PVector v : vecs) {
 			p.vertex(v.x, v.y);
@@ -91,6 +120,7 @@ public class ocIcon {
 		p.endShape(PApplet.CLOSE);
 		p.popMatrix();
 
+		//UI
 		if (p.mousePressed && isHit()) {
 			isDraggable = true; // set state NOT actual position of sprite
 			currPos.x = pos.x;
@@ -109,19 +139,47 @@ public class ocIcon {
 			//ocCollection.isSystemHitSafe = false;
 		}
 
-		if (p.keyPressed)
-		{
-			isResettable = true;
 
-//			System.out.println(pos.x);
-//			System.out.println(initPos.x);
-//			System.out.println(startPos.x);
+		if (p.keyPressed) {
+			if (p.key == ' ') { //reset to x and y positions
+				isResettable = true;
+				currPos.x = startPos.x;
+				currPos.y = startPos.y;
+			} else if (p.key == 'r') { //reset radius
+				zoomRadius = radius;
+			}
 
-			//Return to current position
-			currPos.x = startPos.x;
-			currPos.y = startPos.y;
+			if (p.key == p.CODED) {
+				setCanZoom(true);
+
+				if (p.keyCode == p.RIGHT) {
+					p.scale(currPos.x += 20);
+					//p.scale(currPos.y += 20);
+				} else if (p.keyCode == p.LEFT) {
+					p.scale(currPos.x -= 20);
+					//p.scale(currPos.y += 20);
+				} else if (p.keyCode == p.UP) {
+					p.scale(currPos.y -= 20);
+
+					//p.scale(currPos.y += 20);
+				} else if (p.keyCode == p.DOWN) {
+					p.scale(currPos.y += 20);
+				}
+			}
+			if (p.key == 'x') {
+				if (zoomRadius < 100) {
+					p.scale(zoomRadius += 0.5);
+				} else if (zoomRadius >= 100){
+					p.scale(zoomRadius);
+				}
+			} else if (p.key == 'z') {
+				if (zoomRadius <= 20) {
+					p.scale(zoomRadius);
+				} else if (zoomRadius > 10) {
+					p.scale(zoomRadius -= 0.5);
+				}
+			}
 		}
-
 	}
 
 	public boolean isHit() {
@@ -132,7 +190,6 @@ public class ocIcon {
 		return false;
 	}
 
-
 	public void setIsDraggable(boolean isDraggable) {
 		this.isDraggable = isDraggable;
 	}
@@ -141,5 +198,6 @@ public class ocIcon {
 		this.isExpandable = isExpandable;
 	}
 
+	public void setCanZoom(boolean canZoom) { this.canZoom = canZoom; }
 
 }

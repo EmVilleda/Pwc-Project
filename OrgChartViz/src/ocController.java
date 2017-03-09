@@ -11,15 +11,12 @@ import java.io.PrintWriter;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.IOException;
+import java.awt.event.MouseWheelListener;
+import java.awt.event.MouseWheelEvent;
 
 import com.iragreenberg.*;
 
 public class ocController extends PApplet {
-
-	/**
-	 *
-	 * 
-	 */
 	public ocIcon icon;
 	public ocCollection collection;
 
@@ -28,7 +25,6 @@ public class ocController extends PApplet {
 		//icon = new ocIcon(this, new PVector(200, 100), 23.0f, ocIconDetail.RECTANGLE);
 		collection = new ocCollection(this, 6);
 		surface.setResizable(true);
-		
 	}
 
 	public void draw() {
@@ -39,9 +35,9 @@ public class ocController extends PApplet {
 		//println(icon.isHit(mouseX, mouseY));
 	}
 
+
 	public void settings() {
 		size(1220, 900);
-		
 	}
 
 	static public void main(String[] passedArgs) {
@@ -57,4 +53,6 @@ public class ocController extends PApplet {
 		//icon.setIsDraggable(false);
 		collection.setIsDraggable(false);
 	}
+
+
 }

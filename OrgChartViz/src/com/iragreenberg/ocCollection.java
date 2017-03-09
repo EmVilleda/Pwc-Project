@@ -14,11 +14,11 @@ public class ocCollection {
 	public float margin = 100.0f;
 	public boolean isSystemHitSafe = true;
 	public boolean isSystemExpandableSafe = true;
-	public float expandSpeed = 30.5f;
+	public float expandSpeed = 30.0f;
 	public float initScaleFactor; // initially scales nodes per node count
+	public boolean canZoom = true;
 
-	public ocCollection() {
-	}
+	public ocCollection() {}
 
 	// PApplet p, PVector pos, float radius, ocIconDetail shape
 	public ocCollection(PApplet p, int entities) {
@@ -48,14 +48,11 @@ public class ocCollection {
 	}
 
 	public void display() {
-
 		for (int i = 0; i < icons.size(); i++) {
-
 			ocIcon icon = icons.get(i);
 
 			if (p.mousePressed && icon.isHit() && isSystemHitSafe) {
-				icon.isDraggable = true; // set state NOT actual position of
-											// sprite
+				icon.isDraggable = true; // set state NOT actual position of sprite
 				isSystemHitSafe = false;
 			} else {
 				icon.pos.x = icon.initPos.x + icon.offset.x;
@@ -69,7 +66,6 @@ public class ocCollection {
 				icon.offset = new PVector(p.mouseX - icon.initPos.x, p.mouseY - icon.initPos.y);
 			}
 
-
 			if (icon.isHit() && isSystemExpandableSafe) {
 				icon.isExpandable = true;
 				isSystemExpandableSafe = false;
@@ -81,28 +77,22 @@ public class ocCollection {
 			p.pushMatrix();
             icons.get(i).setIsExpandable(true);
 			if (icon.isExpandable && icon.radius < 100 && icon.isHit()) {
-				icon.radius += expandSpeed;
+				icon.radius = icon.initRadius + expandSpeed;
 			}
-
 			icons.get(i).display();
-
-            p.popMatrix();
+			p.popMatrix();
 
             //connect icons
 			if (i + 1 < icons.size()) {
-				p.stroke(0);
+				p.stroke(94, 35, 35);
 				p.strokeWeight(1);
-				p.line(icon.pos.x + icon.radius - expandSpeed, icon.pos.y, icons.get(i+1).pos.x - icon.radius + expandSpeed, icons.get(i+1).pos.y);
+				p.line(icon.pos.x + icon.radius - expandSpeed, icon.pos.y, icons.get(i + 1).pos.x - icon.radius + expandSpeed, icons.get(i + 1).pos.y);
 			}
-
-
 		}
 	}
 
 
-	public void setAreIconsDraggable(int id) {
-
-	}
+	public void setAreIconsDraggable(int id) {}
 
 	public void setIsDraggable(boolean isDraggable) {
 		if (!isDraggable) {
@@ -119,6 +109,12 @@ public class ocCollection {
 		}
 		for (int i = 0; i < icons.size(); i++) {
 			icons.get(i).setIsExpandable(isExpandable);
+		}
+	}
+
+	public void setCanZoom(boolean canZoom) {
+		for(int i = 0; i < icons.size(); i++) {
+			icons.get(i).setCanZoom(canZoom);
 		}
 	}
 

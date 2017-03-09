@@ -9,7 +9,7 @@ void setup () {
   size (600, 200);
   xo = width/2;
   yo = height/2;
-  smooth();
+  //smooth();
   noStroke();
 }
  
