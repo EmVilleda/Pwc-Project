@@ -53,6 +53,7 @@ public class ocCollection {
 
 			if (p.mousePressed && icon.isHit() && isSystemHitSafe) {
 				icon.isDraggable = true; // set state NOT actual position of sprite
+				icon.isDraggable = true; // set state NOT actual position of sprite
 				isSystemHitSafe = false;
 			} else {
 				icon.pos.x = icon.initPos.x + icon.offset.x;
@@ -70,6 +71,12 @@ public class ocCollection {
 				icon.isExpandable = true;
 				isSystemExpandableSafe = false;
 			} else {
+				icon.radius = icon.initRadius;
+				icon.offset.mult(icon.offsetDamping);
+			}
+
+			p.pushMatrix();
+			icons.get(i).setIsExpandable(true);
 				 icon.radius = icon.initRadius;
 				 icon.offset.mult(icon.offsetDamping);
 			}
@@ -81,6 +88,21 @@ public class ocCollection {
 			}
 			icons.get(i).display();
 			p.popMatrix();
+			p.popMatrix();
+
+			/*
+
+			System.out.println(icon.pos.x + icon.radius);
+			System.out.println(icon.pos.y);
+			System.out.println(icons.get(i + 1).pos.x - icon.radius);
+			System.out.println(icons.get(i + 1).pos.y);
+*/
+			//drawLines();
+
+			//connect icons
+			//TO DO: make it so that icons are still draggable and expandable when connected
+
+            p.popMatrix();
 
             //connect icons
 			if (i + 1 < icons.size()) {
@@ -111,11 +133,17 @@ public class ocCollection {
 			icons.get(i).setIsExpandable(isExpandable);
 		}
 	}
-
 	public void setCanZoom(boolean canZoom) {
 		for(int i = 0; i < icons.size(); i++) {
 			icons.get(i).setCanZoom(canZoom);
 		}
 	}
-
+	public void drawLines(){
+		for (int i = 0; i < icons.size(); i++) {
+			ocIcon icon = icons.get(i);
+			p.stroke(0);
+			p.strokeWeight(1);
+			p.line(icon.pos.x + icon.radius, icon.pos.y, icons.get(i + 1).pos.x - icon.radius, icons.get(i + 1).pos.y);
+		}
+	}
 }

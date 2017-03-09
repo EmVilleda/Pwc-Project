@@ -27,7 +27,7 @@ public class ocIcon {
 
 	public PVector offset = new PVector();
 	public float offsetDamping = .9125f;
-	
+
 	public boolean isReleased = false;
 	public boolean isDraggable;
 	public boolean isExpandable;
@@ -54,36 +54,36 @@ public class ocIcon {
 
 		//Nodes
 		switch (shape) {
-		case CIRCLE:
-			theta = 0;
-			for (int i = 0; i < detail; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / detail;
-			}
-			break;
-		case TRIANGLE:
-			theta = -p.PI / 2.0f;
-			for (int i = 0; i < 3; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / 3;
-			}
-			break;
-		case SQUARE:
-			theta = -p.PI / 4.0f;
-			for (int i = 0; i < 4; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / 4;
-			}
-			break;
-		case RECTANGLE:
-			theta = -p.PI / 4.0f;
-			for (int i = 0; i < 4; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f * 1.5f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / 4;
-			}
-			break;
-		default:
-			break;
+			case CIRCLE:
+				theta = 0;
+				for (int i = 0; i < detail; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / detail;
+				}
+				break;
+			case TRIANGLE:
+				theta = -p.PI / 2.0f;
+				for (int i = 0; i < 3; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / 3;
+				}
+				break;
+			case SQUARE:
+				theta = -p.PI / 4.0f;
+				for (int i = 0; i < 4; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / 4;
+				}
+				break;
+			case RECTANGLE:
+				theta = -p.PI / 4.0f;
+				for (int i = 0; i < 4; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f * 1.5f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / 4;
+				}
+				break;
+			default:
+				break;
 		}
 	}
 
@@ -94,7 +94,7 @@ public class ocIcon {
 		p.stroke(0);
 		p.rect(90, p.height - 220, 300, 170);
 
-		font = p.createFont("American Typewriter",30,true);
+		font = p.createFont("American Typewriter", 30, true);
 		p.textFont(font, 16);
 		p.fill(94, 35, 35);
 		p.text("User controls:", 100, p.height - 200);
@@ -109,7 +109,7 @@ public class ocIcon {
 
 		//Draw icons
 		p.fill(253, 181, 43);
-		p.strokeWeight(1.0f/radius);
+		p.strokeWeight(1.0f / radius);
 		p.pushMatrix();
 		p.translate(pos.x, pos.y);
 		p.scale(zoomRadius);
@@ -123,61 +123,69 @@ public class ocIcon {
 		//UI
 		if (p.mousePressed && isHit()) {
 			isDraggable = true; // set state NOT actual position of sprite
+		} else {
+			pos.x = initPos.x + offset.x;
+			pos.y = initPos.y + offset.y;
+			offset.mult(offsetDamping);
+			//ocCollection.isSystemHitSafe = true;
 			currPos.x = pos.x;
 			currPos.y = pos.y;
-		} else {
-				pos.x = currPos.x;
-				pos.y = currPos.y;
-				offset.mult(offsetDamping);
-				//ocCollection.isSystemHitSafe = true;
+		}else{
+			pos.x = currPos.x;
+			pos.y = currPos.y;
+			offset.mult(offsetDamping);
+			//ocCollection.isSystemHitSafe = true;
+
 		}
 
-		if (isDraggable){
+		if (isDraggable) {
 			pos.x = p.mouseX;
 			pos.y = p.mouseY;
-			//offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
+			offset = new PVector(p.mouseX - initPos.x, p.mouseY - initPos.y);
 			//ocCollection.isSystemHitSafe = false;
 		}
+		//offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
+		//ocCollection.isSystemHitSafe = false;
+	}
 
 
-		if (p.keyPressed) {
-			if (p.key == ' ') { //reset to x and y positions
-				isResettable = true;
-				currPos.x = startPos.x;
-				currPos.y = startPos.y;
-			} else if (p.key == 'r') { //reset radius
-				zoomRadius = radius;
+	if (p.keyPressed){
+		if (p.key == ' ') { //reset to x and y positions
+			isResettable = true;
+			currPos.x = startPos.x;
+			currPos.y = startPos.y;
+		} else if (p.key == 'r') { //reset radius
+			zoomRadius = radius;
+		}
+
+		if (p.key == p.CODED) {
+			setCanZoom(true);
+
+			if (p.keyCode == p.RIGHT) {
+				p.scale(currPos.x += 20);
+				//p.scale(currPos.y += 20);
+			} else if (p.keyCode == p.LEFT) {
+				p.scale(currPos.x -= 20);
+				//p.scale(currPos.y += 20);
+			} else if (p.keyCode == p.UP) {
+				p.scale(currPos.y -= 20);
+
+				//p.scale(currPos.y += 20);
+			} else if (p.keyCode == p.DOWN) {
+				p.scale(currPos.y += 20);
 			}
-
-			if (p.key == p.CODED) {
-				setCanZoom(true);
-
-				if (p.keyCode == p.RIGHT) {
-					p.scale(currPos.x += 20);
-					//p.scale(currPos.y += 20);
-				} else if (p.keyCode == p.LEFT) {
-					p.scale(currPos.x -= 20);
-					//p.scale(currPos.y += 20);
-				} else if (p.keyCode == p.UP) {
-					p.scale(currPos.y -= 20);
-
-					//p.scale(currPos.y += 20);
-				} else if (p.keyCode == p.DOWN) {
-					p.scale(currPos.y += 20);
-				}
+		}
+		if (p.key == 'x') {
+			if (zoomRadius < 100) {
+				p.scale(zoomRadius += 0.5);
+			} else if (zoomRadius >= 100) {
+				p.scale(zoomRadius);
 			}
-			if (p.key == 'x') {
-				if (zoomRadius < 100) {
-					p.scale(zoomRadius += 0.5);
-				} else if (zoomRadius >= 100){
-					p.scale(zoomRadius);
-				}
-			} else if (p.key == 'z') {
-				if (zoomRadius <= 20) {
-					p.scale(zoomRadius);
-				} else if (zoomRadius > 10) {
-					p.scale(zoomRadius -= 0.5);
-				}
+		} else if (p.key == 'z') {
+			if (zoomRadius <= 20) {
+				p.scale(zoomRadius);
+			} else if (zoomRadius > 20) {
+				p.scale(zoomRadius -= 0.5);
 			}
 		}
 	}
@@ -193,7 +201,7 @@ public class ocIcon {
 	public void setIsDraggable(boolean isDraggable) {
 		this.isDraggable = isDraggable;
 	}
-	
+
 	public void setIsExpandable(boolean isExpandable) {
 		this.isExpandable = isExpandable;
 	}
