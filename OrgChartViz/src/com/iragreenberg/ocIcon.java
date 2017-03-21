@@ -7,9 +7,6 @@ import processing.core.PVector;
 
 public class ocIcon {
 
-	/**
-	 *
-	 */
 	//Data structure to make tree
 	private List<ocIcon> children = new ArrayList<ocIcon>();
 	private ocIcon parent = null;
@@ -21,25 +18,18 @@ public class ocIcon {
 	public ocIconDetail shape;
 	public ArrayList<PVector> vecs;
 	public int detail = 36;
-	public boolean isBeingHit = false;
 	public boolean isResettable;
-	public float spd = 10.2f;
-	public float expandSpd = 10.2f;
-	public float expansionRadius = 0.0f;
-	public PVector resetVector = new PVector();
-	public PVector temp = new PVector();
 
 	public PVector offset = new PVector();
 	public float offsetDamping = .9125f;
-	
-	public boolean isReleased = false;
+
 	public boolean isDraggable;
 	public boolean isExpandable;
 
 	public ocIcon() {
 	}
 
-	//Child Parent
+	//Parent
 	public ocIcon(PApplet p, PVector pos, float radius, ocIconDetail shape) {
 		this.p = p;
 		this.pos = pos;
@@ -184,23 +174,16 @@ public class ocIcon {
 				pos.x = currPos.x;
 				pos.y = currPos.y;
 				offset.mult(offsetDamping);
-				//ocCollection.isSystemHitSafe = true;
 		}
 
 		if (isDraggable){
 			pos.x = p.mouseX;
 			pos.y = p.mouseY;
-			//offset = new PVector(p.mouseX-initPos.x, p.mouseY-initPos.y);
-			//ocCollection.isSystemHitSafe = false;
 		}
 
 		if (p.keyPressed)
 		{
 			isResettable = true;
-
-//			System.out.println(pos.x);
-//			System.out.println(initPos.x);
-//			System.out.println(startPos.x);
 
 			//Return to current position
 			currPos.x = startPos.x;
