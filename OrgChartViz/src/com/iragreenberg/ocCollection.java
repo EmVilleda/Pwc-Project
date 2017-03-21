@@ -27,18 +27,31 @@ public class ocCollection {
 		float gap = (p.width - margin * 2.0f - iconW * entities) / (entities - 1);
 
 		// if > 1 node, automatically evenly space along x-axis
-		if (entities > 1) {
+		if (entities > 1 && gap > 100) {
 			icons.add(new ocIcon(p, new PVector(margin + iconW / 2.0f, p.height / 2.0f), iconW / 2.0f,
-					ocIconDetail.CIRCLE));
+					ocIconDetail.RECTANGLE));
 			for (int i = 1; i < entities - 1; i++) {
 				icons.add(new ocIcon(p, new PVector(margin + iconW / 2.0f + (iconW + gap) * (i), p.height / 2.0f),
-						iconW / 2.0f, ocIconDetail.CIRCLE));
+						iconW / 2.0f, ocIconDetail.RECTANGLE));
 			}
 			icons.add(new ocIcon(p, new PVector(p.width - margin - iconW / 2.0f, p.height / 2.0f), iconW / 2.0f,
-					ocIconDetail.CIRCLE));
+					ocIconDetail.RECTANGLE));
 			// center singleton case
+		} else if (entities == 1){
+			icons.add(new ocIcon(p, new PVector(p.width / 2.0f, p.height / 2.0f), iconW / 2.0f, ocIconDetail.RECTANGLE));
 		} else {
-			icons.add(new ocIcon(p, new PVector(p.width / 2.0f, p.height / 2.0f), iconW / 2.0f, ocIconDetail.CIRCLE));
+			for (int i = 0; i < entities; i++) {
+				float iconPosX = margin + iconW / 2.0f + (iconW + 100) * (i);
+				float iconPosY = p.height / 2.0f + (iconW + 100);
+
+//				if (i > 5 && i < 10) {
+//					iconPosY = (p.height / 2.0f + (iconW + 800) - i*100);
+//				}
+
+				icons.add(new ocIcon(p, new PVector(iconPosX, iconPosY), 30, ocIconDetail.RECTANGLE));
+
+
+			}
 		}
 
 		// set all nodes draggable - TO DO: add UI Controls
@@ -88,7 +101,7 @@ public class ocCollection {
 			if (i + 1 < icons.size()) {
 				p.stroke(94, 35, 35);
 				p.strokeWeight(1);
-				p.line(icon.pos.x + icon.radius - expandSpeed, icon.pos.y, icons.get(i + 1).pos.x - icon.radius + expandSpeed, icons.get(i + 1).pos.y);
+				p.line(icon.pos.x + icon.zoomRadius - expandSpeed, icon.pos.y, icons.get(i + 1).pos.x - icon.zoomRadius + expandSpeed, icons.get(i + 1).pos.y);
 			}
 
 			icons.get(i).display();

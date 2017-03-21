@@ -81,6 +81,7 @@ public class ocIcon {
 					vecs.add(new PVector(p.cos(theta) * 1.0f * 1.5f, p.sin(theta) * 1.0f));
 					theta += p.TWO_PI / 4;
 				}
+				//p.rectMode(p.CENTER);
 				break;
 			default:
 				break;
@@ -103,7 +104,7 @@ public class ocIcon {
 		p.text("x: increase node radius", 100, p.height - 140);
 		p.text("z: decrease node radius", 100, p.height - 120);
 		p.text("r: reset size", 100, p.height - 100);
-		p.text("Move image wth arrow keys", 100, p.height - 80);
+		p.text("Move image with arrow keys", 100, p.height - 80);
 		p.text("Press spacebar to reset position", 100, p.height - 60);
 		p.popMatrix();
 
