@@ -69,20 +69,11 @@ application.macosx
 # JIRA plugin
 atlassian-ide-plugin.xml
 
+# Cursive Clojure plugin
+.idea/replstate.xml
+
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
-
-OrgChartViz/.idea/compiler.xml
-
-OrgChartViz/.idea/copyright/profiles_settings.xml
-
-OrgChartViz/.idea/data/font.ttc
-
-OrgChartViz/.idea/modules.xml
-
-OrgChartViz/.idea/misc.xml
-
-OrgChartViz/.idea/vcs.xml
