@@ -8,54 +8,61 @@ import processing.core.PVector;
 public class ocCollection {
 
 	public int entities = 4; // default
-	public ArrayList<ocIcon> icons = new ArrayList<ocIcon>();
-	public ArrayList<Boolean> areIconsDraggable = new ArrayList<Boolean>();
+	public ocIcon rootIcon;
 	private PApplet p;
 	public float margin = 100.0f;
 	public boolean isSystemHitSafe = true;
 	public boolean isSystemExpandableSafe = true;
-	public float expandSpeed = 30.5f;
+	public float expandSpeed = 30.0f;
 	public float initScaleFactor; // initially scales nodes per node count
+	public boolean canZoom = true;
 
-	public ocCollection() {
-	}
+	public ocCollection() {}
 
 	// PApplet p, PVector pos, float radius, ocIconDetail shape
 	public ocCollection(PApplet p, int entities) {
 		this.p = p;
+		this.entities = entities;
 		float iconW = p.width / (entities * 2);
-		float gap = (p.width - margin * 2.0f - iconW * entities) / (entities - 1);
+		float gap = (p.width - margin * 2.0f - iconW * entities) / (entities);
 
-		// if > 1 node, automatically evenly space along x-axis
-		if (entities > 1) {
-			icons.add(new ocIcon(p, new PVector(margin + iconW / 2.0f, p.height / 2.0f), iconW / 2.0f,
-					ocIconDetail.CIRCLE));
-			for (int i = 1; i < entities - 1; i++) {
-				icons.add(new ocIcon(p, new PVector(margin + iconW / 2.0f + (iconW + gap) * (i), p.height / 2.0f),
-						iconW / 2.0f, ocIconDetail.CIRCLE));
+		if (entities > 1 && gap < 100) { //if there are too many shapes to properly be displayed on screen (shapes will be too small, gaps too small))
+			iconW = 50;
+			gap = 50;
+			rootIcon = new ocIcon(p, new PVector(margin + iconW / 1.0f , p.height / 2.0f - 100), iconW / 2.0f, ocIconDetail.TRIANGLE);
+			for (int i = 0; i < entities; i++) {
+				rootIcon.addChild(p, new PVector(margin + iconW / 1.0f + (iconW + gap) * (i), p.height / 1.9f), iconW / 2.0f, ocIconDetail.RECTANGLE);
 			}
-			icons.add(new ocIcon(p, new PVector(p.width - margin - iconW / 2.0f, p.height / 2.0f), iconW / 2.0f,
-					ocIconDetail.CIRCLE));
-			// center singleton case
-		} else {
-			icons.add(new ocIcon(p, new PVector(p.width / 2.0f, p.height / 2.0f), iconW / 2.0f, ocIconDetail.CIRCLE));
+		} else if (entities > 1 && gap <= 100) {
+			rootIcon = new ocIcon(p, new PVector(margin + iconW / 2.0f, p.height / 2.0f), iconW / 2.0f, ocIconDetail.TRIANGLE);
+			for (int i = 0; i < entities; i++) {
+				rootIcon.addChild(p, new PVector(margin + iconW / 1.0f + (iconW + gap) * (i), p.height / 1.9f), iconW / 2.0f, ocIconDetail.RECTANGLE);
+			}
+		}
+
+		else if(entities == 1) {
+			rootIcon = new ocIcon(p, new PVector(margin + iconW / 2.0f, p.height / 2.0f), iconW / 2.0f, ocIconDetail.RECTANGLE);
+		}
+		else {
+			for (int i = 0; i < entities; i++) {
+				rootIcon = new ocIcon(p, new PVector(margin + iconW / 2.0f + (iconW + 100) * (i), p.height / 2.0f + (iconW + 100)), 30, ocIconDetail.RECTANGLE);
+			}
 		}
 
 		// set all nodes draggable - TO DO: add UI Controls
-		for (int i = 0; i < icons.size(); i++) {
-			icons.get(i).setIsDraggable(false);
+		rootIcon.setIsDraggable(false);
+		for (int i = 0; i < entities; i++) {
+			rootIcon.getChildren().get(i).setIsDraggable(false);
 		}
 	}
 
 	public void display() {
 
-		for (int i = 0; i < icons.size(); i++) {
-
-			ocIcon icon = icons.get(i);
+		for (int i = 0; i < entities; i++) {
+			ocIcon icon = rootIcon.getChildren().get(i);
 
 			if (p.mousePressed && icon.isHit() && isSystemHitSafe) {
-				icon.isDraggable = true; // set state NOT actual position of
-				// sprite
+				icon.isDraggable = true; // set state NOT actual position of sprite
 				isSystemHitSafe = false;
 			} else {
 				icon.pos.x = icon.initPos.x + icon.offset.x;
@@ -69,73 +76,74 @@ public class ocCollection {
 				icon.offset = new PVector(p.mouseX - icon.initPos.x, p.mouseY - icon.initPos.y);
 			}
 
-
 			if (icon.isHit() && isSystemExpandableSafe) {
 				icon.isExpandable = true;
 				isSystemExpandableSafe = false;
 			} else {
-<<<<<<< HEAD
 				icon.radius = icon.initRadius;
 				icon.offset.mult(icon.offsetDamping);
 			}
 
 			p.pushMatrix();
-			icons.get(i).setIsExpandable(true);
-=======
-				 icon.radius = icon.initRadius;
-				 icon.offset.mult(icon.offsetDamping);
-			}
 
-			p.pushMatrix();
-            icons.get(i).setIsExpandable(true);
->>>>>>> 0e7e9c8aea1d59f08eb626f91342ea0cf0b758ea
+			icon.setIsExpandable(true);
 			if (icon.isExpandable && icon.radius < 100 && icon.isHit()) {
-				icon.radius += expandSpeed;
+				icon.radius = icon.initRadius + expandSpeed;
 			}
 
-			icons.get(i).display();
-
-<<<<<<< HEAD
-			p.popMatrix();
-
-			/*
-
-			System.out.println(icon.pos.x + icon.radius);
-			System.out.println(icon.pos.y);
-			System.out.println(icons.get(i + 1).pos.x - icon.radius);
-			System.out.println(icons.get(i + 1).pos.y);
-*/
-			//drawLines();
-
-			//connect icons
-			//TO DO: make it so that icons are still draggable and expandable when connected
-
-=======
-            p.popMatrix();
-
-            //connect icons
-			if (i + 1 < icons.size()) {
-				p.stroke(0);
+			//only drawling 5 lines because it starts at 1; need to fix this
+			if (i < entities) {
+				p.stroke(94, 35, 35);
 				p.strokeWeight(1);
-				p.line(icon.pos.x + icon.radius - expandSpeed, icon.pos.y, icons.get(i+1).pos.x - icon.radius + expandSpeed, icons.get(i+1).pos.y);
+				p.line(rootIcon.pos.x + rootIcon.zoomRadius - expandSpeed, rootIcon.pos.y, rootIcon.getChildren().get(i).pos.x - icon.zoomRadius + expandSpeed, rootIcon.getChildren().get(i).pos.y);
 			}
->>>>>>> 0e7e9c8aea1d59f08eb626f91342ea0cf0b758ea
-
-
+			icon.display();
+			p.popMatrix();
 		}
+
+		if (p.mousePressed && rootIcon.isHit() && isSystemHitSafe) {
+			rootIcon.isDraggable = true; // set state NOT actual position of sprite
+			isSystemHitSafe = false;
+		} else {
+			rootIcon.pos.x = rootIcon.initPos.x + rootIcon.offset.x;
+			rootIcon.pos.y = rootIcon.initPos.y + rootIcon.offset.y;
+			rootIcon.offset.mult(rootIcon.offsetDamping);
+		}
+
+		if (rootIcon.isDraggable) {
+			rootIcon.pos.x = p.mouseX;
+			rootIcon.pos.y = p.mouseY;
+			rootIcon.offset = new PVector(p.mouseX - rootIcon.initPos.x, p.mouseY - rootIcon.initPos.y);
+		}
+
+
+		if (rootIcon.isHit() && isSystemExpandableSafe) {
+			rootIcon.isExpandable = true;
+			isSystemExpandableSafe = false;
+		} else {
+			rootIcon.radius = rootIcon.initRadius;
+			rootIcon.offset.mult(rootIcon.offsetDamping);
+		}
+
+		p.pushMatrix();
+		rootIcon.setIsExpandable(true);
+		if (rootIcon.isExpandable && rootIcon.radius < 100 && rootIcon.isHit()) {
+			rootIcon.radius += expandSpeed;
+		}
+		rootIcon.display();
+		p.popMatrix();
 	}
 
 
-	public void setAreIconsDraggable(int id) {
-
-	}
+	public void setAreIconsDraggable(int id) {}
 
 	public void setIsDraggable(boolean isDraggable) {
 		if (!isDraggable) {
-			isSystemHitSafe = true;
+			isSystemHitSafe = false;
 		}
-		for (int i = 0; i < icons.size(); i++) {
-			icons.get(i).setIsDraggable(isDraggable);
+		rootIcon.setIsDraggable(isSystemHitSafe);
+		for (int i = 0; i < entities; i++) {
+			rootIcon.getChildren().get(i).setIsDraggable(isSystemHitSafe);
 		}
 	}
 
@@ -143,21 +151,23 @@ public class ocCollection {
 		if (!isExpandable) {
 			isSystemExpandableSafe = true;
 		}
-		for (int i = 0; i < icons.size(); i++) {
-			icons.get(i).setIsExpandable(isExpandable);
+		rootIcon.setIsExpandable(isSystemExpandableSafe);
+		for (int i = 0; i < entities; i++) {
+			rootIcon.getChildren().get(i).setIsExpandable(isSystemExpandableSafe);
 		}
 	}
 
-<<<<<<< HEAD
-	public void drawLines(){
-		for (int i = 0; i < icons.size(); i++) {
-			ocIcon icon = icons.get(i);
-			p.stroke(0);
-			p.strokeWeight(1);
-			p.line(icon.pos.x + icon.radius, icon.pos.y, icons.get(i + 1).pos.x - icon.radius, icons.get(i + 1).pos.y);
+	public void setCanZoom(boolean canZoom) {
+		for(int i = 0; i < rootIcon.getChildren().size(); i++) {
+			rootIcon.getChildren().get(i).setCanZoom(canZoom);
 		}
 	}
-
-=======
->>>>>>> 0e7e9c8aea1d59f08eb626f91342ea0cf0b758ea
+//	public void drawLines(){
+//		for (int i = 0; i < rootIcon.getChildren().size(); i++) {
+//			ocIcon icon = rootIcon.getChildren().get(i);
+//			p.stroke(0);
+//			p.strokeWeight(1);
+//			p.line(icon.pos.x, icon.pos.y, rootIcon.getChildren().get(i + 1).pos.x, rootIcon.getChildren().get(i + 1).pos.y);
+//		}
+//	}
 }

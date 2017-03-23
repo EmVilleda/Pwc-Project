@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3237258-4a82-497a-a0ef-b20123f15e5f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Pwc-Project.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/OrgChartViz/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/OrgChartViz/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/OrgChartViz/bin/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocIcon$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocIconDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/ocController.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocCollection.class" afterPath="$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocCollection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocIcon.class" afterPath="$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocIcon.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocCollection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocIcon.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrgChartViz/.idea/misc.xml" afterPath="$PROJECT_DIR$/OrgChartViz/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrgChartViz/.idea/workspace.xml" afterPath="$PROJECT_DIR$/OrgChartViz/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrgChartViz/OrgChartViz.iml" afterPath="$PROJECT_DIR$/OrgChartViz/OrgChartViz.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocCollection.java" afterPath="$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocCollection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java" afterPath="$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIconDetail.java" afterPath="$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIconDetail.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrgChartViz/src/ocController.java" afterPath="$PROJECT_DIR$/OrgChartViz/src/ocController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,18 +24,90 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OrgChartViz/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="480" column="38" lean-forward="true" selection-start-line="480" selection-start-column="38" selection-end-line="480" selection-end-column="38" />
+            <state relative-caret-position="7200">
+              <caret line="480" column="38" lean-forward="false" selection-start-line="480" selection-start-column="38" selection-end-line="480" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ocIcon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-670">
+              <caret line="147" column="9" lean-forward="false" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#ocIcon#2;class#ocIcon#0" expanded="false" />
+                <element signature="e#3747#3748#0" expanded="true" />
+                <element signature="e#3769#3770#0" expanded="true" />
+                <element signature="e#3798#3799#0" expanded="true" />
+                <element signature="e#3823#3824#0" expanded="true" />
+                <element signature="e#6840#6841#0" expanded="true" />
+                <element signature="e#6877#6878#0" expanded="true" />
+                <element signature="e#6931#6932#0" expanded="true" />
+                <element signature="e#6970#6971#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ocIconDetail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIconDetail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ocCollection.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="172" selection-end-column="1" />
+              <folding>
+                <element signature="method#setIsDraggable#0;class#ocCollection#0" expanded="false" />
+                <element signature="method#setIsExpandable#0;class#ocCollection#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ocController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrgChartViz/src/ocController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="25" column="45" lean-forward="false" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+              <folding>
+                <element signature="e#845#846#0" expanded="true" />
+                <element signature="e#867#868#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1167#1168#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>line</find>
+      <find>entities</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,16 +120,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java" />
         <option value="$PROJECT_DIR$/OrgChartViz/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java" />
+        <option value="$PROJECT_DIR$/OrgChartViz/src/ocController.java" />
+        <option value="$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocCollection.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="223" />
+    <option name="x" value="237" />
     <option name="y" value="23" />
     <option name="width" value="886" />
-    <option name="height" value="812" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -84,7 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -107,7 +170,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -121,25 +184,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pwc-Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrgChartViz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -147,28 +192,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pwc-Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrgChartViz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -415,35 +447,35 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="223" y="23" width="886" height="812" extended-state="1" />
-    <editor active="true" />
+    <frame x="237" y="23" width="886" height="810" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32793522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39503387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39503387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -460,11 +492,189 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7200">
+          <caret line="480" column="38" lean-forward="false" selection-start-line="480" selection-start-column="38" selection-end-line="480" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="195" column="24" lean-forward="false" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ocIcon#2;class#ocIcon#0" expanded="false" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIconDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#setIsDraggable#0;class#ocCollection#0" expanded="false" />
+            <element signature="method#setIsExpandable#0;class#ocCollection#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocIcon.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+          <folding>
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7200">
+          <caret line="480" column="38" lean-forward="false" selection-start-line="480" selection-start-column="38" selection-end-line="480" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2865">
+          <caret line="195" column="24" lean-forward="true" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ocIcon#2;class#ocIcon#0" expanded="false" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIconDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#setIsDraggable#0;class#ocCollection#0" expanded="false" />
+            <element signature="method#setIsExpandable#0;class#ocCollection#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocIcon.class" />
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+          <folding>
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7200">
+          <caret line="480" column="38" lean-forward="false" selection-start-line="480" selection-start-column="38" selection-end-line="480" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ocIcon#2;class#ocIcon#0" expanded="false" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#setIsDraggable#0;class#ocCollection#0" expanded="false" />
+            <element signature="method#setIsExpandable#0;class#ocCollection#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OrgChartViz/src/ocController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -482,26 +692,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7200">
+          <caret line="480" column="38" lean-forward="false" selection-start-line="480" selection-start-column="38" selection-end-line="480" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/out/production/OrgChartViz/com/iragreenberg/ocIcon.class" />
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="-670">
+          <caret line="147" column="9" lean-forward="false" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ocIcon#2;class#ocIcon#0" expanded="false" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIconDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OrgChartViz/src/ocController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="92">
+          <caret line="25" column="45" lean-forward="false" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrgChartViz/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="480" column="38" lean-forward="true" selection-start-line="480" selection-start-column="38" selection-end-line="480" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="172" selection-end-column="1" />
+          <folding>
+            <element signature="method#setIsDraggable#0;class#ocCollection#0" expanded="false" />
+            <element signature="method#setIsExpandable#0;class#ocCollection#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -534,7 +789,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>core1</last-edited>
+          <last-edited>core</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

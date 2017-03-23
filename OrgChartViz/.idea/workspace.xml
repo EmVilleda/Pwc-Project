@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3237258-4a82-497a-a0ef-b20123f15e5f" name="Default" comment="" />
+    <list default="true" id="0cef07c1-ac53-43c1-b43d-5725ac97388f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java" afterPath="$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/iragreenberg/ocIconDetail.java" afterPath="$PROJECT_DIR$/src/com/iragreenberg/ocIconDetail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java" afterPath="$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,8 +19,79 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="OrgChartViz" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ocController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ocController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ocCollection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="170" column="1" lean-forward="false" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ocIcon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="258" column="40" lean-forward="true" selection-start-line="258" selection-start-column="40" selection-end-line="258" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#292#300#0" expanded="true" />
+                <element signature="e#3345#3346#0" expanded="true" />
+                <element signature="e#3367#3368#0" expanded="true" />
+                <element signature="e#3408#3409#0" expanded="true" />
+                <element signature="e#3435#3436#0" expanded="true" />
+                <element signature="e#3747#3748#0" expanded="true" />
+                <element signature="e#3769#3770#0" expanded="true" />
+                <element signature="e#3798#3799#0" expanded="true" />
+                <element signature="e#3823#3824#0" expanded="true" />
+                <element signature="e#6840#6841#0" expanded="true" />
+                <element signature="e#6877#6878#0" expanded="true" />
+                <element signature="e#6931#6932#0" expanded="true" />
+                <element signature="e#6970#6971#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ocIconDetail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIconDetail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setIsDraggable</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -25,14 +101,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java" />
+        <option value="$PROJECT_DIR$/src/com/iragreenberg/ocIconDetail.java" />
+        <option value="$PROJECT_DIR$/src/ocController.java" />
+        <option value="$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java" />
+        <option value="$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="162" />
+    <option name="y" value="23" />
+    <option name="width" value="812" />
+    <option name="height" value="718" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -48,45 +130,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Pwc-Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pwc-Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pwc-Project" />
+              <option name="myItemId" value="OrgChartViz" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -94,16 +145,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrgChartViz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrgChartViz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocController.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrgChartViz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrgChartViz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iragreenberg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="FullScreen" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.ocController">
     <configuration default="false" name="ocController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -339,46 +425,46 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b3237258-4a82-497a-a0ef-b20123f15e5f" name="Default" comment="" />
-      <created>1487693854176</created>
+      <changelist id="0cef07c1-ac53-43c1-b43d-5725ac97388f" name="Default" comment="" />
+      <created>1487695598992</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1487693854176</updated>
+      <updated>1487695598992</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="162" y="23" width="812" height="718" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22958398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298153" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16795069" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1958128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -393,43 +479,562 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/ocController.java">
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="450">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java">
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="143" column="9" lean-forward="false" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIconDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrgChart/OrgChart.pde">
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2145">
+          <caret line="143" column="9" lean-forward="true" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/com/iragreenberg/ocIcon.java">
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIconDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrgChartViz/src/ocController.java">
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2610">
+          <caret line="185" column="32" lean-forward="false" selection-start-line="185" selection-start-column="32" selection-end-line="185" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIconDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="89" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="138" column="42" lean-forward="false" selection-start-line="138" selection-start-column="42" selection-end-line="138" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="68" column="92" lean-forward="false" selection-start-line="68" selection-start-column="85" selection-end-line="68" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="115" column="41" lean-forward="false" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIconDetail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="91" column="2" lean-forward="true" selection-start-line="91" selection-start-column="2" selection-end-line="91" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="258" column="40" lean-forward="true" selection-start-line="258" selection-start-column="40" selection-end-line="258" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#300#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+            <element signature="e#6931#6932#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocIconDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iragreenberg/ocCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="170" column="1" lean-forward="false" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -462,7 +1067,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>core1</last-edited>
+          <last-edited>core</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -474,7 +1079,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8 (2)</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -498,6 +1103,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -509,7 +1115,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Re__Data</last-edited>
+          <last-edited>core</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
