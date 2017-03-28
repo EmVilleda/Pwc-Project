@@ -94,41 +94,44 @@ public class ocIcon {
 		currPos = initPos;
 		// spd = new PVector
 		this.radius = initRadius = radius;
+		zoomRadius = radius;
 		this.shape = shape;
 		this.parent = parent;
 		vecs = new ArrayList<PVector>();
 		float theta = 0.0f;
+
+		//Nodes
 		switch (shape) {
-		case CIRCLE:
-			theta = 0;
-			for (int i = 0; i < detail; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / detail;
-			}
-			break;
-		case TRIANGLE:
-			theta = -p.PI / 2.0f;
-			for (int i = 0; i < 3; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / 3;
-			}
-			break;
-		case SQUARE:
-			theta = -p.PI / 4.0f;
-			for (int i = 0; i < 4; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / 4;
-			}
-			break;
-		case RECTANGLE:
-			theta = -p.PI / 4.0f;
-			for (int i = 0; i < 4; i++) {
-				vecs.add(new PVector(p.cos(theta) * 1.0f * 1.5f, p.sin(theta) * 1.0f));
-				theta += p.TWO_PI / 4;
-			}
-			break;
-		default:
-			break;
+			case CIRCLE:
+				theta = 0;
+				for (int i = 0; i < detail; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / detail;
+				}
+				break;
+			case TRIANGLE:
+				theta = -p.PI / 2.0f;
+				for (int i = 0; i < 3; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / 3;
+				}
+				break;
+			case SQUARE:
+				theta = -p.PI / 4.0f;
+				for (int i = 0; i < 4; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / 4;
+				}
+				break;
+			case RECTANGLE:
+				theta = -p.PI / 4.0f;
+				for (int i = 0; i < 4; i++) {
+					vecs.add(new PVector(p.cos(theta) * 1.0f * 1.5f, p.sin(theta) * 1.0f));
+					theta += p.TWO_PI / 4;
+				}
+				break;
+			default:
+				break;
 		}
 	}
 
