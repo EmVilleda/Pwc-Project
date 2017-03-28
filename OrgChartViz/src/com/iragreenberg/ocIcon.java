@@ -135,13 +135,44 @@ public class ocIcon {
 		}
 	}
 
+	// Get all the children icons of this icon
 	public List<ocIcon> getChildren() {
 		return children;
+	}
+
+	// Checks the icon's children array (all icons have one)
+	public boolean hasChildren() {
+		if(this.children.size() > 0) {
+			System.out.println("Parent True");
+			return true;
+		} else {
+			System.out.println("Parent False");
+			return false;
+		}
+	}
+
+	// Checks if icon has a parent icon or if it's still null
+	public boolean isChild() {
+		if(this.parent != null)
+			return true;
+		else
+			return false;
 	}
 
 	public void setParent(ocIcon parent) {
 		this.parent = parent;
 	}
+
+	// Checks if this icon has children, which means it's a parent
+	public boolean isParent() {
+		return hasChildren();
+	}
+
+	// Check if the parameter icon included is a parent
+	public boolean isParent(ocIcon icon) {
+		return icon.hasChildren();
+	}
+
 
 	public void addChild(ocIcon child) {
 		child.setParent(this);

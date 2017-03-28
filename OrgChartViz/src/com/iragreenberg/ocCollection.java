@@ -26,22 +26,30 @@ public class ocCollection {
 		float iconW = p.width / (entities * 2);
 		float gap = (p.width - margin * 2.0f - iconW * entities) / (entities);
 
-		if (entities > 1 && gap < 100) { //if there are too many shapes to properly be displayed on screen (shapes will be too small, gaps too small))
+		if (entities > 1 && gap > 100) { //if there are too many shapes to properly be displayed on screen (shapes will be too small, gaps too small))
 			iconW = 50;
 			gap = 50;
 			rootIcon = new ocIcon(p, new PVector(margin + iconW / 1.0f , p.height / 2.0f - 100), iconW / 2.0f, ocIconDetail.TRIANGLE);
 			for (int i = 0; i < entities; i++) {
 				rootIcon.addChild(p, new PVector(margin + iconW / 1.0f + (iconW + gap) * (i), p.height / 1.9f), iconW / 2.0f, ocIconDetail.RECTANGLE);
 			}
+			rootIcon.isParent();
+
+			for (int i = 0; i < entities; i++) {
+				rootIcon.getChildren().get(i).addChild(p, new PVector(margin + iconW / 1.0f + (iconW + gap) * (i) + 200, p.height / 1.9f), iconW / 2.0f, ocIconDetail.RECTANGLE);
+			}
 		} else if (entities > 1 && gap <= 100) {
 			rootIcon = new ocIcon(p, new PVector(margin + iconW / 2.0f, p.height / 2.0f), iconW / 2.0f, ocIconDetail.TRIANGLE);
 			for (int i = 0; i < entities; i++) {
 				rootIcon.addChild(p, new PVector(margin + iconW / 1.0f + (iconW + gap) * (i), p.height / 1.9f), iconW / 2.0f, ocIconDetail.RECTANGLE);
+				rootIcon.isChild();
 			}
+
 		}
 
 		else if(entities == 1) {
 			rootIcon = new ocIcon(p, new PVector(margin + iconW / 2.0f, p.height / 2.0f), iconW / 2.0f, ocIconDetail.RECTANGLE);
+			rootIcon.isParent();
 		}
 		else {
 			for (int i = 0; i < entities; i++) {
@@ -49,7 +57,6 @@ public class ocCollection {
 			}
 		}
 
-		// set all nodes draggable - TO DO: add UI Controls
 		rootIcon.setIsDraggable(false);
 		for (int i = 0; i < entities; i++) {
 			rootIcon.getChildren().get(i).setIsDraggable(false);
