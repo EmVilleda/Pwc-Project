@@ -36,13 +36,17 @@ public class ocCollection {
 			rootIcon.isParent();
 
 			for (int i = 0; i < entities; i++) {
-				rootIcon.getChildren().get(i).addChild(p, new PVector(margin + iconW / 1.0f + (iconW + gap) * (i) + 200, p.height / 1.9f), iconW / 2.0f, ocIconDetail.RECTANGLE);
+				ocIcon children = rootIcon.getChildren().get(i);
+				children.addChild(p, new PVector(500 + 100*i, 100), iconW / 2.0f, ocIconDetail.RECTANGLE);
+				rootIcon.getChildren().get(i).isParent();
 			}
+			System.out.println("CASE 1");
 		} else if (entities > 1 && gap <= 100) {
 			rootIcon = new ocIcon(p, new PVector(margin + iconW / 2.0f, p.height / 2.0f), iconW / 2.0f, ocIconDetail.TRIANGLE);
 			for (int i = 0; i < entities; i++) {
 				rootIcon.addChild(p, new PVector(margin + iconW / 1.0f + (iconW + gap) * (i), p.height / 1.9f), iconW / 2.0f, ocIconDetail.RECTANGLE);
 				rootIcon.isChild();
+				System.out.println("CASE 2");
 			}
 
 		}
@@ -50,11 +54,13 @@ public class ocCollection {
 		else if(entities == 1) {
 			rootIcon = new ocIcon(p, new PVector(margin + iconW / 2.0f, p.height / 2.0f), iconW / 2.0f, ocIconDetail.RECTANGLE);
 			rootIcon.isParent();
+			System.out.println("CASE 3");
 		}
 		else {
 			for (int i = 0; i < entities; i++) {
 				rootIcon = new ocIcon(p, new PVector(margin + iconW / 2.0f + (iconW + 100) * (i), p.height / 2.0f + (iconW + 100)), 30, ocIconDetail.RECTANGLE);
 			}
+			System.out.println("CASE 4");
 		}
 
 		rootIcon.setIsDraggable(false);
@@ -67,14 +73,20 @@ public class ocCollection {
 
 		for (int i = 0; i < entities; i++) {
 			ocIcon icon = rootIcon.getChildren().get(i);
+			//ocIcon icon2 = rootIcon.getChildren().get(i).getChildren().get(0);
 
 			if (p.mousePressed && icon.isHit() && isSystemHitSafe) {
 				icon.isDraggable = true; // set state NOT actual position of sprite
+//				icon2.isDraggable = true;
 				isSystemHitSafe = false;
 			} else {
 				icon.pos.x = icon.initPos.x + icon.offset.x;
 				icon.pos.y = icon.initPos.y + icon.offset.y;
 				icon.offset.mult(icon.offsetDamping);
+
+//				icon2.pos.x = icon.initPos.x + icon.offset.x;
+//				icon2.pos.y = icon.initPos.y + icon.offset.y;
+//				icon2.offset.mult(icon.offsetDamping);
 			}
 
 			if (icon.isDraggable) {
@@ -82,6 +94,12 @@ public class ocCollection {
 				icon.pos.y = p.mouseY;
 				icon.offset = new PVector(p.mouseX - icon.initPos.x, p.mouseY - icon.initPos.y);
 			}
+
+//			if (icon2.isDraggable) {
+//				icon.pos.x = p.mouseX;
+//				icon.pos.y = p.mouseY;
+//				icon.offset = new PVector(p.mouseX - icon.initPos.x, p.mouseY - icon.initPos.y);
+//			}
 
 			if (icon.isHit() && isSystemExpandableSafe) {
 				icon.isExpandable = true;
@@ -91,12 +109,24 @@ public class ocCollection {
 				icon.offset.mult(icon.offsetDamping);
 			}
 
+//			if (icon2.isHit() && isSystemExpandableSafe) {
+//				icon2.isExpandable = true;
+//				isSystemExpandableSafe = false;
+//			} else {
+//				icon2.radius = icon2.initRadius;
+//				icon2.offset.mult(icon2.offsetDamping);
+//			}
+
 			p.pushMatrix();
 
 			icon.setIsExpandable(true);
+//			icon2.setIsExpandable(true);
 			if (icon.isExpandable && icon.radius < 100 && icon.isHit()) {
 				icon.radius = icon.initRadius + expandSpeed;
 			}
+//			if (icon2.isExpandable && icon2.radius < 100 && icon2.isHit()) {
+//				icon2.radius = icon2.initRadius + expandSpeed;
+//			}
 
 			//only drawling 5 lines because it starts at 1; need to fix this
 			if (i < entities) {
@@ -105,6 +135,7 @@ public class ocCollection {
 				p.line(rootIcon.pos.x + rootIcon.zoomRadius - expandSpeed, rootIcon.pos.y, rootIcon.getChildren().get(i).pos.x - icon.zoomRadius + expandSpeed, rootIcon.getChildren().get(i).pos.y);
 			}
 			icon.display();
+//			icon2.display();
 			p.popMatrix();
 		}
 
@@ -151,6 +182,7 @@ public class ocCollection {
 		rootIcon.setIsDraggable(isSystemHitSafe);
 		for (int i = 0; i < entities; i++) {
 			rootIcon.getChildren().get(i).setIsDraggable(isSystemHitSafe);
+//			rootIcon.getChildren().get(i).getChildren().get(i).setIsDraggable(isSystemHitSafe);
 		}
 	}
 
@@ -161,12 +193,17 @@ public class ocCollection {
 		rootIcon.setIsExpandable(isSystemExpandableSafe);
 		for (int i = 0; i < entities; i++) {
 			rootIcon.getChildren().get(i).setIsExpandable(isSystemExpandableSafe);
+//			rootIcon.getChildren().get(i).getChildren().get(i).setIsExpandable(isSystemExpandableSafe);
 		}
 	}
 
 	public void setCanZoom(boolean canZoom) {
 		for(int i = 0; i < rootIcon.getChildren().size(); i++) {
 			rootIcon.getChildren().get(i).setCanZoom(canZoom);
+		}
+		for(int i = 0; i < rootIcon.getChildren().get(i).getChildren().size(); i++) {
+			rootIcon.getChildren().get(i).setCanZoom(canZoom);
+//			rootIcon.getChildren().get(i).getChildren().get(i).setCanZoom(canZoom);
 		}
 	}
 //	public void drawLines(){

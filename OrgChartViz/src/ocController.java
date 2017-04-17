@@ -23,7 +23,7 @@ public class ocController extends PApplet {
 	public void setup() {
 		//surface.setResizable(true);
 		//icon = new ocIcon(this, new PVector(200, 100), 23.0f, ocIconDetail.RECTANGLE);
-		collection = new ocCollection(this, 4);
+		collection = new ocCollection(this, 10);
 
 		surface.setResizable(true);
 	}
